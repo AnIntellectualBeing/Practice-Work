@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My Website</title>
+  <style>
+		body {
+			font-family: Arial, sans-serif;
+			line-height: 1.5;
+			margin: 0;
+			padding: 0;
+		}
+
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 1rem;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		nav ul {
+			list-style: none;
+			display: flex;
+			align-items: center;
+			margin: 0;
+			padding: 0;
+		}
+
+		nav li {
+			margin-right: 1rem;
+		}
+
+		nav a {
+			color: #fff;
+			text-decoration: none;
+			padding: 0.5rem;
+			border-radius: 5px;
+			transition: background-color 0.2s;
+		}
+
+		nav a:hover {
+			background-color: #555;
+		}
+
+		main {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 2rem;
+		}
+
+		h1, h2 {
+			margin-top: 0;
+		}
+
+		h2 {
+			font-size: 2rem;
+			margin-bottom: 1rem;
+		}
+
+		ul, ol {
+			margin-left: 1.5rem;
+		}
+
+		figure {
+			margin: 0;
+			padding: 0;
+		}
+
+		figcaption {
+			margin-top: 0.5rem;
+			font-style: italic;
+			font-size: 0.8rem;
+			text-align: center;
+		}
+
+		form {
+			display: flex;
+			flex-direction: column;
+			max-width: 600px;
+			margin: 0 auto;
+		}
+
+		label {
+			font-weight: bold;
+			margin-top: 1rem;
+		}
+
+		input, textarea {
+			margin-bottom: 1rem;
+			padding: 0.5rem;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			font-size: 1rem;
+		}
+
+		button {
+			background-color: #333;
+			color: #fff;
+			padding: 0.5rem;
+			border-radius: 5px;
+			border: none;
+			font-size: 1rem;
+			cursor: pointer;
+			transition: background-color 0.2s;
+			align-self: flex-end;
+			max-width: 200px;
+		}
+
+		button:hover {
+			background-color: #555;
+		}
+
+		footer {
+			background-color: #eee;
+			padding: 1rem;
+			text-align: center;
+			font-size: 0.8rem;
+			margin-top: 2rem;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Welcome to my website</h1>
+		<nav>
+			<ul>
+				<li><a href="#about">About</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="about">
+			<h2>About Us</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam semper, metus nec lobortis imperdiet, arcu augue bibendum quam, vel aliquam odio eros eget nunc.</p>
+			<ul>
+				<li>Our History</li>
+				<li>Our Team</li>
+				<li>Our Philosophy</li>
+			</ul>
+		</section>
+		<section id="services">
+			<h2>Our Services</h2>
+			<ol>
+				<li>Web Design</li>
+				<li>Web Development</li>
+				<li>Graphic Design</li>
+				<li>SEO</li>
+			</ol>
+		</section>
+		<section id="portfolio">
+			<h2>Our Portfolio</h2>
+			<p>Here are some examples of our work:</p>
+			<figure>
+				<img src="image1.jpg" alt="Project 1">
+				<figcaption>Project 1</figcaption>
+			</figure>
+			<figure>
+				<img src="image2.jpg" alt="Project 2">
+				<figcaption>Project 2</figcaption>
+			</figure>
+			<figure>
+				<img src="image3.jpg" alt="Project 3">
+				<figcaption>Project 3</figcaption>
+			</figure>
+		</section>
+		<section id="contact">
+			<h2>Contact Us</h2>
+			<form action="submit.php" method="post">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name">
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email">
+				<label for="message">Message:</label>
+				<textarea id="message" name="message"></textarea>
+				<button type="submit">Send</button>
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 My Website. All rights reserved.</p>
+	</footer>
+</body>
+</html>
